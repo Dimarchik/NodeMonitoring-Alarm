@@ -22,10 +22,10 @@ wget-O $HOME / tenderduty/config.yml "https://raw.githubusercontent.com/lesnikut
 
 #Open config file and change
 nano $HOME / tenderduty/config.ymlY
--network name: haqq
--chain-id: haqq_54211-2 
--valoper_address: haqqvalcons1.......... 
--RPC url: http://142.132.202.50:11601 
+-network name: nolus
+-chain-id: nolus-rila
+-valoper_address: nolusvaloper.......... 
+-RPC url: https://net-rila.nolus.io:26657 
 
 #exit & save & launching
 docker ru -d --tender fee name -p "8888:8888" -p "28686:28686" --restart if not stopped -v$(pwd)/config.yml:/var/lib/tenderduty/config.yml ghcr.io/blockpane/tenderduty:latest
